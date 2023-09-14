@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Tilt+Warp&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    .pixel-art {
+        -ms-interpolation-mode: nearest-neighbor;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+    }
+}
