@@ -13,6 +13,9 @@
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined} class="hover:underline">
 				<a href="/about">About</a>
 			</li>
+			<li aria-current={$page.url.pathname === '/gen' ? 'page' : undefined} class="hover:underline">
+				<a href="/gen">Generators</a>
+			</li>
 			<li aria-current={$page.url.pathname === '/mods' ? 'page' : undefined} class="hover:underline">
 				<a href="/mods">Mods</a>
 			</li>

@@ -1,4 +1,4 @@
-interface ModrinthResponse {
+type ModrinthResponse = {
   id: string;
   slug: string;
   project_type: string;
@@ -36,7 +36,7 @@ interface ModrinthResponse {
   monetization_status: string;
 }
 
-interface Gallery {
+type Gallery = {
   url: string;
   featured: boolean;
   title: string;
@@ -45,14 +45,54 @@ interface Gallery {
   ordering: number;
 }
 
-interface DonationUrl {
+type DonationUrl = {
   id: string;
   platform: string;
   url: string;
 }
 
-interface License {
+type License = {
   id: string;
   name: string;
   url?: any;
 }
+
+
+type Team = {
+  team_id: string;
+  user: User;
+  role: string;
+  permissions: number;
+  accepted: boolean;
+  payouts_split: number;
+  ordering: number;
+}
+
+
+type User = {
+  username: string;
+  name: string;
+  email: string;
+  bio: string;
+  payout_data: PayoutData;
+  id: string;
+  avatar_url: string;
+  created: string;
+  role: string;
+  badges: number;
+  auth_providers: string[];
+  email_verified: boolean;
+  has_password: boolean;
+  has_totp: boolean;
+  github_id?: any;
+}
+
+type PayoutData = {
+  balance: number;
+  payout_wallet: string;
+  payout_wallet_type: string;
+  payout_address: string;
+}
+
+
+

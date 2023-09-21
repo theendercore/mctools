@@ -13,7 +13,7 @@
 	]
 </script>
 
-<div class="flex flex-wrap items-center justify-center max-w-4xl gap-3">
+<div class="flex flex-wrap justify-center max-w-6xl gap-6">
 	{#each mods as id}
     	<ModCard {id} />
 	{/each}
