@@ -1,3 +1,12 @@
+type ModData = {
+	id: string;
+	title: string;
+	icon_url: string;
+	description: string;
+	versions: string[];
+	owner?: string;
+}
+
 type ModrinthResponse = {
 	id: string;
 	slug: string;
@@ -6,28 +15,28 @@ type ModrinthResponse = {
 	title: string;
 	description: string;
 	body: string;
-	body_url?: any;
+	body_url?: unknown;
 	published: string;
 	updated: string;
 	approved: string;
 	queued: string;
 	status: string;
 	requested_status: string;
-	moderator_message?: any;
+	moderator_message?: unknown;
 	license: License;
 	client_side: string;
 	server_side: string;
 	downloads: number;
 	followers: number;
 	categories: string[];
-	additional_categories: any[];
+	additional_categories: unknown[];
 	game_versions: string[];
 	loaders: string[];
 	versions: string[];
 	icon_url: string;
 	issues_url: string;
 	source_url: string;
-	wiki_url?: any;
+	wiki_url?: unknown;
 	discord_url: string;
 	donation_urls: DonationUrl[];
 	gallery: Gallery[];
@@ -40,7 +49,7 @@ type Gallery = {
 	url: string;
 	featured: boolean;
 	title: string;
-	description?: any;
+	description?: unknown;
 	created: string;
 	ordering: number;
 };
@@ -54,7 +63,7 @@ type DonationUrl = {
 type License = {
 	id: string;
 	name: string;
-	url?: any;
+	url?: unknown;
 };
 
 type Team = {
@@ -82,7 +91,7 @@ type User = {
 	email_verified: boolean;
 	has_password: boolean;
 	has_totp: boolean;
-	github_id?: any;
+	github_id?: unknown;
 };
 
 type PayoutData = {

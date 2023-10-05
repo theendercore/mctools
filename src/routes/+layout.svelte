@@ -3,14 +3,11 @@
  	import "../app.css";
 </script>
 
-<div class="flex flex-col h-full text-text app bg-background">
+<div class="flex flex-col text-text app bg-background">
 	<Header />
 
-	<main class="flex items-center justify-center h-full">
+	<main class="flex items-center h-full justify-center py-10">
 		<slot />
 	</main>
 
-	<footer class="flex justify-center p-1 mt-auto bg-secondary">
-		<p class="text-gray-600">Devilish code by yours truly!</p>
-	</footer>
 </div> 
